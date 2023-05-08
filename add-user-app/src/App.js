@@ -15,10 +15,10 @@ function App() {
     setUsersList(newUserList)
   }
   return (
-    <div>
+    <>
       <AddUser onAddUser={addUserHandler} />
       <UserList users={usersList} onRemoveUserHandler={deleteUserHandler} />
-    </div>
+    </>
   );
 }
 
